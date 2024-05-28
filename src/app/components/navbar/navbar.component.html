@@ -1,0 +1,95 @@
+<nav class="navbar fixed-top navbar-expand navbar-dark justify-content-center deskonlyflex">
+    <img class="ms-4 logo-cell cursor-pointer" src="assets/icons/svg.svg" alt="logo" (click)="navigateHome()">
+    <ul class="navbar-nav mx-auto" *ngIf="currentUrl === '/'">
+        <li class="nav-item center-nav" [ngClass]="{'active': (activeNav === 'section-intro')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-intro')">Intro</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-projects')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-projects')">{{ 'Projects' }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-skills')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-skills')">{{ 'Skills'  }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-about')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-about')">{{ 'About' }}</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active': (activeNav === 'section-contact')}">
+            <a class="nav-link cursor-pointer" (click)="goToSection('section-contact')">{{ 'Contact' }}</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav mx-auto" *ngIf="currentUrl !== '/'">
+        <li class="nav-item center-nav">
+            <a class="nav-link cursor-pointer" [routerLink]="['/']" routerLinkActive="router-link-active">{{ 'Home' }}</a>
+        </li>
+        <li class="nav-item center-nav" *ngIf="currentUrl.includes('projects/')">
+            <a class="nav-link cursor-pointer" [routerLink]="['/projects']" routerLinkActive="router-link-active">{{ 'Projects' }}</a>
+        </li>
+    </ul>
+    <span *ngIf="currentColorMode === 'dark'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to light mode' | translate }}">
+        <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
+    </span>
+    <span *ngIf="currentColorMode === 'light'" class="d-flex me-4" tabindex="0" data-bs-toggle="tooltip" title="{{ 'Change to dark mode' | translate }}">
+        <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
+    </span>
+
+</nav>
+
+<nav class="navbar fixed-top navbar-dark cellonly">
+    <div class="row">
+        <div class="col-6">
+            <img class="ms-3 logo-cell" src="assets/icons/svg.svg" alt="logo" (click)="navigateHome()">
+        </div>
+        <div class="col-6">
+            <div class="dropdown" *ngIf="currentUrl === '/'">
+                <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCellHome" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCellHome">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" (click)="goToSection('section-intro')">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" (click)="goToSection('section-projects')">{{ 'Projects' }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" (click)="goToSection('section-skills')">{{ 'Skills' }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" (click)="goToSection('section-about')">{{ 'About' }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" (click)="goToSection('section-contact')">{{ 'Contact' }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
+                            <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
+                        </a>
+                        <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
+                            <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="dropdown" *ngIf="currentUrl !== '/'">
+                <button class="btn btn-outline-light dropdown-toggle float-end me-4" type="button" id="dropDownNavTopCell" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropDownNavTopCell">
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" routerLinkActive="router-link-active" (click)="navigateHome()">{{ 'Home' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="currentColorMode === 'dark'" class="nav-link dropdown-item">
+                            <img src="assets/icons/sun.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('light')">
+                        </a>
+                        <a *ngIf="currentColorMode === 'light'" class="nav-link dropdown-item">
+                            <img src="assets/icons/moon.png" class="color-mode-icon cursor-pointer" (click)="changeColorMode('dark')">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

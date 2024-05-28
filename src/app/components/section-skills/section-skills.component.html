@@ -1,0 +1,52 @@
+<div class="card card-section card-section-height">
+    <div class="card-body">
+        <div class="row text-center mb-4">
+            <div class="col-12 col-sm-6 col-lg-3 mt-5">
+                <img class="img-skills" src="assets/icons/responsive-64.png"> 
+                <br>
+                <span class="fw-bold">{{ 'Responsive' | translate }}</span>
+                <br>
+                <p>{{ 'My layouts will work on any device' | translate }}</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5">
+                <img class="img-skills" src="assets/icons/perfection-58.png"> 
+                <br>
+                <span class="fw-bold">{{ 'Clean Code' | translate }}</span>
+                <br>
+                <p>{{ 'Good practices and readability, my biggest priority' | translate }}</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5">
+                <img class="img-skills" src="assets/icons/communication-64.png">
+                <br>
+                <span class="fw-bold">{{ 'Communicative' | translate }}</span>
+                <br>
+                <p>{{ 'Always glad to help my coworkers' | translate }}</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-5">
+                <img class="img-skills" src="assets/icons/learn-60.png">
+                <br>
+                <span class="fw-bold">{{ 'Fast-learner' | translate }}</span>
+                <br>
+                <p>{{ 'I\'m very adapdable and fast to learn new things' | translate }}</p>
+            </div>
+        </div>
+        <div class="row mt-5 text-center justify-content-center">
+            <div class="col-12 col-md-6 border-right-desktop">
+                <h3>Frontend</h3>
+                <div class="row">
+                    <div class="col-6 col-lg-4 my-3 my-md-5" *ngFor="let technology of technologiesFrontend">
+                        <app-tech-item [tech]="technology"></app-tech-item>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5 mt-md-0">
+                <h3>Backend</h3>
+                <div class="row">
+                    <div class="col-6 col-lg-4 my-3 my-md-5" *ngFor="let technology of technologiesBackend">
+                        <app-tech-item [tech]="technology"></app-tech-item>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

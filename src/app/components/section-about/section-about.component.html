@@ -1,0 +1,21 @@
+<div class="card card-section card-section-height">
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-fluid rounded" src="assets/images/MattOro.png" alt="Matthew Oro">
+        </div>
+        <div class="col-md-9">
+            <div class="card-body">
+                    <h2 class="border-bottom">{{ 'Summary' }}</h2>
+                    <span [innerHTML]="'AboutDescription.summary' | translate"></span>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <h2 class="border-bottom">{{ 'Experience & Education'  }}</h2>
+                <app-timeline></app-timeline>
+            </div>
+        </div>
+    </div>
+</div>

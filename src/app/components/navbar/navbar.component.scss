@@ -1,0 +1,41 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+
+    a {
+        text-transform: uppercase;
+        margin: 0 1rem;
+        color: white;
+    }
+
+    .center-nav {
+        margin-left: 5rem;
+    }
+}
+
+.lang-flag {
+    height: 32px;
+    width: 32px;
+    opacity: 0.3;
+}
+
+.active-lang {
+    opacity: 1;
+}
+
+.cellonly {
+    ul {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.dropdown-menu {
+    margin-top: 2.9rem;
+}
+
+.logo-cell {
+    height: 2.5rem;
+}
+
+.color-mode-icon {
+    height: 24px;
+}

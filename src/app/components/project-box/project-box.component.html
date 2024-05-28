@@ -1,0 +1,19 @@
+<div class="project-item-wrapper mx-auto">
+  	<img [src]="project.mainImgSrc" [alt]="project.alt" [title]="project.title">
+  	<div class="row row-techs my-3">
+    	<div class="col text-center" *ngFor="let tech of project.techs">
+      		<span class="{{ tech.fontColor }} fw-bold">{{ tech.name }}</span>
+    	</div>
+  	</div>
+  	<div class="row mb-3 row-icons">
+    	<div class="col-4 text-end">
+			<app-external-project-icon [project]="project" [type]="'Preview'"></app-external-project-icon>
+		</div>
+		<div class="col-4 text-center">
+			<app-external-project-icon [project]="project" [type]="'Code'"></app-external-project-icon>
+    	</div>
+    	<div class="col-4 text-start">
+			<app-external-project-icon [project]="project" [type]="'Detail'"></app-external-project-icon>
+    	</div>
+  	</div>
+</div>

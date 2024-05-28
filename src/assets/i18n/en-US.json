@@ -1,0 +1,33 @@
+{
+    "AboutDescription": {
+        "summary": "I'm a full-stack web developer, with over 8 years of development experience. I have worked with several comapanies across different industries such as E-Commerce, E-Learning and GPS traking system. I worked on the development of an e-commerce for a large flower shop that has thousands of daily visitors, in addition to developing applications using <span class=\"fw-bold text-react\">React</span>, <span class=\"fw-bold\">NextJS</span>, <span class=\"fw-bold text-nodejs\">Node.js</span>, <span class=\"fw-bold text-python\">Python </span> and <span class=\"fw-bold text-aws\">AWS</span>.<br><br> I'm always looking to improve my skills and roo to grow my self, and up for new challenges.",
+        "DBM1": "I worked as the lead front-end developer to create a new PBX system.",
+        "DBM2": "Front-end technologies used: Angular with Bootstrap.",
+        "Esal1": "Developed the Esalcorp app, which is used to manage the company’s internal inventory, using Ionic framework with Angular.",
+        "Esal2": "Developed Esalflores e-commerce website, which connects with the company’s ERP api. The website reaches thousands of users per month.",
+        "Korp1": "I developed and ensured maintenance of the ERP system, SQL queries and Unit Tests.",
+        "Korp2": "As an intern, my main task was to build SQL queries and guarantee the good functionality of the program.",
+        "RPC1": "RPC is a television network, being the largest affiliate of Rede Globo, covering the entire state of Paraná.",
+        "RPC2": "My main responsibility is to develop new applications and ensure the stability of the company's systems, performing serverless deployments and creating Lambda functions on AWS.",
+        "Reali1": "Built front and backend applications including e-commerce using wide range of tech stacks.",
+        "Reali2": "Migrated from monolithic to microservice architecture and as result, improved scalability and performance.",
+        "Reali3": "Revamped a legacy version to the latest version, enhancing code maintainability and reducing type-related errors.",
+        "Reali4": "Participated in code review, mentoring junior developers",
+        "hkust1": "Bachelor's degree in Computer Science",
+        "hkust2": "GPA: 3.8/4"
+    },
+    "ProjectDetailDescription": {
+        "jakrooo": "This project was quite challenging, I was just starting my career, so I needed to dedicate myself a lot to learning about  <span class=\"text-angular fw-bold\">Angular</span>. <br><br> Some points I learned during this project: <ul> <li>Website security</li> <li>Checkout management</li> <li>On-line payments (payment gateways)</li> <li>Local storage for temporary persistence of some information</li> <li><span class=\"text-angular fw-bold\">Angular</span> details</li> <li>Backend using <span class=\"text-laravel fw-bold\">Laravel</span></li> </ul> <br> The project design was developed by the company's designers, I was tasked with transferring the design to <span class=\"text-angular fw-bold\">Angular</span>.",
+        "jakroo": "This platform offers custom-designed cycling and triathlon apparel. One of the key advantages of this approach to designing clothes is using of 3D modeling technology. By leveraging 3D modeling, this platform is able to offer a more personalized and efficient design process for our customers.",
+        "moovetra": "Acting as Frontend in the development of the new PBX telephone system using <span class=\"text-angular fw-bold\">Angular</span> with <span class=\"text-bootstrap fw-bold\">Bootstrap</span>. In this project I was responsible for ensuring fluid integration between <span class=\"fw-bold\">Frontend</span> and <span class=\"fw-bold\">Backend</span>, as well as creating of new screens and responsiveness.",
+        "moovetrax": "The platform allows the car rental company to monitor the real-time location of their rental cars, enabling them to track and control their fleet efficiently.",
+        "esalcorp": "This corporate application was developed to track company deliveries. The application was integrated with the company's <span class=\"fw-bold\">ERP</span> to generate automated information.<br><br>The application also includes customer signatures that are saved in <span class=\"fw-bold\">Google Cloud Storage</span>.",
+        "esalpet": "",
+        "currency-exchange-app": "",
+        "realtime-chat-app": "",
+        "planting-trees": "",
+        "akon-engenharia": "",
+        "eweather": ""
+    },
+    "Curriculum Vitae": "assets/documents/MattOroResume.pdf"
+}
